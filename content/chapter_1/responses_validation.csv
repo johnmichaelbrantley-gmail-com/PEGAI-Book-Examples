@@ -1,0 +1,32 @@
+variant,prompt,response
+A,"Product description: A pair of shoes that can
+fit any foot size.
+Seed words: adaptable, fit, omni-fit.
+Product names:","OmniFit Flex Shoes  
+AdaptiveFit  
+OneSize Stride  
+FlexFit All  
+OmniStride  
+FitEvery  
+Universal Step  
+AdaptStride  
+AllFoot Fit  
+FlexiFit  
+EveryStep  
+OmniFit Wearable  
+Boundless Fit"
+B,"Product description: A home milkshake maker.
+Seed words: fast, healthy, compact.
+Product names: HomeShaker, Fit Shaker, QuickShake, Shake
+Maker
+
+Product description: A watch that can tell accurate time in
+space.
+Seed words: astronaut, space-hardened, eliptical orbit
+Product names: AstroTime, SpaceGuard, Orbit-Accurate,
+EliptoTime.
+
+Product description: A pair of shoes that can fit any foot
+size.
+Seed words: adaptable, fit, omni-fit.
+Product names:","AdaptFit, OmniFit, AnySize Shoes, FlexiFit"
