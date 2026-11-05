@@ -15,3 +15,4 @@ interview.txt
 **/**.index
 oreilly
 **.model
+.venv/
