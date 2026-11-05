@@ -1,6 +1,4 @@
-ok, stupid question, .ipynb come from "Jupiter"
 
-Not a stupid question. It’s close: the extension comes from Jupyter’s predecessor.
 
 .ipynb stands for “IPython Notebook”. IPython (“Interactive Python”) was the original project, started around 2001, that created this notebook format.
 In 2014 the notebook part grew beyond Python and was renamed Jupyter, spelled with a “y”. The name combines three programming languages it supports: Julia, Python and R. It’s also a nod to the planet Jupiter and Galileo’s notebooks of his observations of its moons.
