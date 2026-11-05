@@ -48,7 +48,7 @@ async def create_summary_from_text(
     """
 
     # Define LLM chain
-    llm = ChatOpenAI(temperature=0, model="gpt-3.5-turbo-16k")
+    llm = ChatOpenAI(model="gpt-6-luna", temperature=0, model_kwargs={"extra_body": {"reasoning_effort": "none"}})
     llm_chain = LLMChain(llm=llm, prompt=PromptTemplate.from_template(prompt_template))
 
     print("Summarizing the data!")

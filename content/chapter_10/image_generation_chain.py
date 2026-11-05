@@ -14,7 +14,7 @@ os.environ["STABILITY_API_KEY"] = api_key
 
 def create_image(title):
     # 1. Create the model:
-    chat = ChatOpenAI()
+    chat = ChatOpenAI(model="gpt-6-luna", model_kwargs={"extra_body": {"reasoning_effort": "none"}})
 
     # 2. Generate the image prompt:
     image_prompt = chat.invoke(

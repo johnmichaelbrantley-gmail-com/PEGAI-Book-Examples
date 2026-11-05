@@ -36,7 +36,7 @@ async def async_get_summary(topic):
     text_documents = await collect_serp_data_and_extract_text_from_webpages(topic=topic)
 
     # Create summaries using LLM:
-    llm = ChatOpenAI(temperature=0)
+    llm = ChatOpenAI(model="gpt-6-luna", temperature=0, model_kwargs={"extra_body": {"reasoning_effort": "none"}})
     text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
         chunk_size=7000
     )

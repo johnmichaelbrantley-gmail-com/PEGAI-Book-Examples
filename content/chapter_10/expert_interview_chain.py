@@ -31,12 +31,12 @@ class InterviewQuestions(BaseModel):
 class InterviewChain:
     def __init__(self, topic: str, document_summaries: Any):
         self.topic = topic
-        self.llm = ChatOpenAI(temperature=0)
+        self.llm = ChatOpenAI(model="gpt-6-luna", temperature=0, model_kwargs={"extra_body": {"reasoning_effort": "none"}})
         self.document_summaries = document_summaries
 
     def __call__(self) -> Any:
         # Create an LLM:
-        model = ChatOpenAI(temperature=0.6)
+        model = ChatOpenAI(model="gpt-6-luna", temperature=0.6, model_kwargs={"extra_body": {"reasoning_effort": "none"}})
 
         # Set up a parser + inject instructions into the prompt template:
         parser: PydanticOutputParser = PydanticOutputParser(

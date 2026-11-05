@@ -43,7 +43,7 @@ class ContentGenerator:
         ---
         Use your previous AI messages to avoid repeating yourself as you continually re-write the blog post sections.
         """
-        chat = ChatOpenAI(model="gpt-3.5-turbo-16k")
+        chat = ChatOpenAI(model="gpt-6-luna", model_kwargs={"extra_body": {"reasoning_effort": "none"}})
         memory = OnlyStoreAIMemory(
             llm=chat,
             memory_key="chat_history",

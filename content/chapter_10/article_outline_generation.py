@@ -45,7 +45,7 @@ class BlogOutlineGenerator:
         self.parser = PydanticOutputParser(pydantic_object=BlogOutline)
 
         # Set up the chain
-        self.outline_chain = self.chat_prompt | ChatOpenAI() | self.parser
+        self.outline_chain = self.chat_prompt | ChatOpenAI(model="gpt-6-luna", model_kwargs={"extra_body": {"reasoning_effort": "none"}}) | self.parser
 
     def generate_outline(self, summaries: List[DocumentSummary]) -> Any:
         print("Generating the outline...\n---")
